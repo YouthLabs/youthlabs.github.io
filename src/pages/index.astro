@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Navbar from '../components/Navbar.astro';
+---
+
+<BaseLayout title="YouthLabs Page">
+  <Navbar />
+  <div class="hero min-h-screen">
+    <div class="grid grid-cols-2 gap-4">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">YouthLabs</h1>
+          <p class="py-6">Group of people from Ukraine, who want to create something new!</p>
+        </div>
+      </div>
+      <div class="card w-96 bg-base-100 shadow-xl transition-all duration-500 hover:scale-105 cursor-pointer">
+        <figure><img src="https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/></figure>
+        <div class="card-body">
+          <h2 class="card-title">Our GitHub</h2>
+          <h2>Check our GitHub, while you waiting for our website)</h2>
+        </div>
+        <a href="https://github.com/youthlabs">
+          <span class="linkSpanner"></span>
+      </div>
+    </div>  
+  </div>  
+</BaseLayout>
